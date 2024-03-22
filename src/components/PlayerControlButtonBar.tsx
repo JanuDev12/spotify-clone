@@ -39,7 +39,7 @@ export function PlayerControlButtonBar() {
         className="bg-white text-black rounded-full p-2 hover:scale-110"
         onClick={onPlayPause}
       >
-        {isPlaying ? <Pause /> : <Play />}
+        {isPlaying ? <Pause className={Pause} /> : <Play className={Play} />}
       </button>
       <button
         className="hover:scale-110"

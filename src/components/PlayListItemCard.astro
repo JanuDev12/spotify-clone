@@ -10,6 +10,8 @@ const { playlist } = Astro.props
 const { id, cover, title, artists, color } = playlist
 
 const artistsString = artists.join(", ")
+
+const size: string = "small";
 ---
 
 <article
@@ -22,7 +24,7 @@ const artistsString = artists.join(", ")
     z-10
   `
   >
-    <CardPlayButton id={id} client:visible />
+    <CardPlayButton id={id} size={size} client:visible />
   </div>
 
   <a
